@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Homemade+Apple&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@144,600,100,1&family=Grape+Nuts&family=Homemade+Apple&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
 
 :root {
   --blue: #1f4480;
@@ -44,13 +44,14 @@ a { color: inherit; }
 .logo-mark--compact { width: 132px; margin: 0 auto -12px; }
 
 .hero h1, .page-header h1, .footer-title {
-  font-family: 'Grape Nuts', cursive;
-  font-weight: 400;
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-variation-settings: 'opsz' 144, 'wght' 600, 'SOFT' 100, 'WONK' 1;
   margin: 0;
   line-height: .9;
 }
-.hero h1 { font-size: clamp(5rem, 12vw, 9.5rem); letter-spacing: .015em; text-shadow: 0 3px 20px rgba(0,0,0,.3); }
-.hero h1 span { display: inline-block; margin: 0 .06em; color: var(--mustard); font-size: .56em; vertical-align: .14em; }
+.hero h1 { font-size: clamp(3.6rem, 10vw, 8rem); letter-spacing: -.01em; text-shadow: 0 3px 20px rgba(0,0,0,.3); }
+.hero h1 span { display: inline-block; margin: 0 .03em; color: var(--mustard); font-size: 1em; vertical-align: 0; }
 .hero-kicker { margin: 1.25rem 0 0; font-size: .72rem; letter-spacing: .34em; text-transform: uppercase; font-weight: 600; }
 
 .site-nav {
@@ -74,7 +75,7 @@ a { color: inherit; }
 .section-label::before, .section-label::after { content: ''; display: inline-block; width: 3rem; height: 1px; margin: 0 1rem .25rem; background: var(--pink); }
 .prose { font-size: clamp(1rem, 1.5vw, 1.12rem); font-weight: 300; line-height: 1.95; }
 .prose h1, .prose h2, .prose h3 { color: var(--navy); font-weight: 500; }
-.home-prose > h1 { font-family: 'Homemade Apple', cursive; font-weight: 400; font-size: clamp(2.7rem, 6vw, 4.6rem); text-align: center; margin: 2rem 0 3.5rem; color: var(--blue); }
+.home-prose > h1 { font-family: 'Grape Nuts', cursive; font-weight: 400; font-size: clamp(3.2rem, 7vw, 5.2rem); text-align: center; margin: 2rem 0 3.5rem; color: var(--blue); }
 .home-prose > p:first-of-type::first-letter { float: left; font-family: 'Grape Nuts', cursive; font-size: 5rem; line-height: .72; padding: .6rem .55rem 0 0; color: var(--pink); }
 .signature { margin-top: 3rem; color: var(--navy); }
 .signature span { display: block; font-family: 'Homemade Apple', cursive; font-size: 1.2rem; }
@@ -83,7 +84,7 @@ a { color: inherit; }
 
 .feature-strip { display: grid; grid-template-columns: repeat(3, 1fr); }
 .feature-card { min-height: 350px; padding: clamp(2rem, 5vw, 4.5rem); display: flex; flex-direction: column; justify-content: flex-end; }
-.feature-card h2 { font-family: 'Grape Nuts', cursive; font-size: clamp(3.5rem, 6vw, 5.4rem); font-weight: 400; line-height: 1; margin: 1rem 0 .5rem; }
+.feature-card h2 { font-family: 'Fraunces', serif; font-size: clamp(3.2rem, 5.5vw, 5rem); font-weight: 600; font-variation-settings: 'opsz' 144, 'wght' 600, 'SOFT' 100, 'WONK' 1; letter-spacing: -.01em; line-height: 1; margin: 1rem 0 .5rem; }
 .feature-card p { max-width: 18rem; font-size: .9rem; line-height: 1.7; }
 .feature-card--blue { background: var(--blue); color: var(--beige); }
 .feature-card--yellow { background: var(--mustard); color: var(--navy); }
@@ -92,10 +93,10 @@ a { color: inherit; }
 .page-header { min-height: 42vh; padding: 4rem 2rem 3rem; background: var(--beige); color: var(--navy); display: flex; flex-direction: column; align-items: center; justify-content: center; }
 .page-header .logo-mark { filter: none; }
 .page-header > p { margin: 1.4rem 0 1rem; }
-.page-header h1 { font-size: clamp(4.5rem, 10vw, 8rem); }
+.page-header h1 { font-size: clamp(3.8rem, 9vw, 7rem); letter-spacing: -.01em; }
 .inner-main { min-height: 50vh; background: var(--paper); }
 .inner-prose { max-width: 780px; margin: auto; padding: 7rem 2rem 9rem; }
-.inner-prose h2 { font-family: 'Grape Nuts', cursive; font-size: clamp(3rem, 7vw, 5rem); line-height: 1; margin: 0 0 3rem; }
+.inner-prose h2 { font-family: 'Fraunces', serif; font-size: clamp(2.8rem, 6vw, 4.5rem); font-weight: 600; font-variation-settings: 'opsz' 144, 'wght' 600, 'SOFT' 100, 'WONK' 1; letter-spacing: -.01em; line-height: 1; margin: 0 0 3rem; }
 .inner-prose h3 { margin-top: 3rem; color: var(--pink); text-transform: uppercase; letter-spacing: .1em; font-size: .86rem; }
 .inner-prose blockquote { margin: 4rem 0; padding: 0 0 0 2rem; border-left: 3px solid var(--mustard); font-family: 'Homemade Apple', cursive; color: var(--blue); font-size: 1.45rem; line-height: 1.8; }
 .signup-placeholder { margin: 3rem 0; padding: 2.5rem; border: 1px dashed var(--pink); background: var(--beige); text-align: center; }
@@ -103,7 +104,7 @@ a { color: inherit; }
 .event-types { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin: 3.5rem 0 7rem; background: rgba(13,36,73,.16); border: 1px solid rgba(13,36,73,.16); }
 .event-type { padding: 2rem 1.6rem; background: var(--beige); }
 .event-type > span, .integration-placeholder > span { color: var(--pink); font-size: .66rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; }
-.event-type h3, .integration-placeholder h3 { margin: .8rem 0 1rem; color: var(--navy); font-family: 'Grape Nuts', cursive; font-size: 2rem; line-height: 1; text-transform: none; letter-spacing: 0; }
+.event-type h3, .integration-placeholder h3 { margin: .8rem 0 1rem; color: var(--navy); font-family: 'Fraunces', serif; font-size: 1.65rem; font-weight: 600; font-variation-settings: 'opsz' 144, 'wght' 600, 'SOFT' 100, 'WONK' 1; line-height: 1.1; text-transform: none; letter-spacing: -.01em; }
 .event-type p, .integration-placeholder p { margin-bottom: 0; font-size: .87rem; line-height: 1.7; }
 .integration-placeholder { padding: 2.2rem; border: 1px dashed var(--pink); background: var(--beige); }
 .integration-placeholder--events { margin: 2.5rem 0 1rem; }
@@ -111,7 +112,7 @@ a { color: inherit; }
 .social-previews { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
 
 .site-footer { padding: 5rem 2rem 2rem; text-align: center; background: var(--navy); color: var(--beige); }
-.site-footer .logo-mark { filter: brightness(0) invert(98%) sepia(8%) saturate(900%) hue-rotate(318deg) brightness(107%); }
+.site-footer .logo-mark { margin-bottom: 1rem; filter: brightness(0) invert(98%) sepia(8%) saturate(900%) hue-rotate(318deg) brightness(107%); }
 .footer-title { font-size: 3rem; color: var(--mustard); }
 .site-footer > p:not(.footer-title):not(.footer-meta) { font-size: .8rem; opacity: .75; }
 .footer-links { display: flex; justify-content: center; gap: 2rem; margin: 2.5rem 0 4rem; }
