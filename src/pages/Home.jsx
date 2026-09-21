@@ -24,13 +24,13 @@ export default function Home() {
         </section>
         <section className="feature-strip" aria-label="Book and Table experiences">
           <div className="feature-card feature-card--blue">
-            <span>01</span><h2>Read</h2><p>Slow down with stories that stay with you.</p>
+            <h2>Read</h2><p>Slow down with stories that stay with you.</p>
           </div>
           <div className="feature-card feature-card--yellow">
-            <span>02</span><h2>Gather</h2><p>Share a table, a meal and a thoughtful conversation.</p>
+            <h2>Gather</h2><p>Share a table, a meal and a thoughtful conversation.</p>
           </div>
           <div className="feature-card feature-card--pink">
-            <span>03</span><h2>Wander</h2><p>Step away from the everyday and return renewed.</p>
+            <h2>Wander</h2><p>Step away from the everyday and return renewed.</p>
           </div>
         </section>
       </main>
