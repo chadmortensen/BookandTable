@@ -58,10 +58,11 @@ function localContentEditor() {
   }
 }
 
-export default defineConfig({
+export default defineConfig(({ command }) => ({
+  base: command === 'build' ? '/BookandTable/' : '/',
   plugins: [
     { enforce: 'pre', ...mdx() },
     react(),
     localContentEditor(),
   ],
-})
+}))

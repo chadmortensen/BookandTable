@@ -9,6 +9,9 @@ export default function Home() {
   const [heroImage] = useState(
     () => heroImages[Math.floor(Math.random() * heroImages.length)],
   )
+  const heroImageUrl = heroImage.src.startsWith('http')
+    ? heroImage.src
+    : `${import.meta.env.BASE_URL}${heroImage.src.replace(/^\//, '')}`
 
   return (
     <div>
@@ -17,7 +20,7 @@ export default function Home() {
           className="hero-photo"
           aria-hidden="true"
           style={{
-            backgroundImage: `url("${heroImage.src}")`,
+            backgroundImage: `url("${heroImageUrl}")`,
             backgroundPosition: heroImage.position,
           }}
         />
