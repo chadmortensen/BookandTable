@@ -25,7 +25,7 @@ export default function Home() {
         <div className="hero-content">
           <LogoMark />
           <h1>Book <span>&amp;</span> Table</h1>
-          <p className="hero-kicker">Read deeply. Gather warmly.</p>
+          <p className="hero-kicker">A space for stories, food, travel and friendship.</p>
         </div>
       </header>
       <SiteNav />
