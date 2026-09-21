@@ -18,7 +18,6 @@ export default function Home() {
       <SiteNav />
       <main>
         <section className="welcome-section">
-          <div className="section-label">You’re invited</div>
           <article className="prose home-prose"><HomeContent /></article>
           <div className="flourish" aria-hidden="true">✦</div>
         </section>
