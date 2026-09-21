@@ -1,0 +1,32 @@
+[
+  {
+    "id": "unsplash-books",
+    "src": "https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=2000&q=85",
+    "alt": "Books arranged on a table",
+    "position": "center 48%"
+  },
+  {
+    "id": "outdoor-reader",
+    "src": "/hero-images/pexels-arthousestudio-4640844.jpg",
+    "alt": "A person reading an open book outdoors at golden hour",
+    "position": "center center"
+  },
+  {
+    "id": "latte-and-book",
+    "src": "/hero-images/pexels-pixabay-531639.jpg",
+    "alt": "A cup of latte beside an open book",
+    "position": "center center"
+  },
+  {
+    "id": "reader-and-hot-drink",
+    "src": "/hero-images/pexels-sam-lion-6001451.jpg",
+    "alt": "A reader with an open book and a hot drink",
+    "position": "center center"
+  },
+  {
+    "id": "blanket-reader",
+    "src": "/hero-images/pexels-maddyfreddie-7792954.jpg",
+    "alt": "A reader holding a book and coffee under a blanket",
+    "position": "center center"
+  }
+]

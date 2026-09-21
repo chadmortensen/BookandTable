@@ -1,13 +1,26 @@
+import { useState } from 'react'
 import HomeContent from '../content/home.mdx'
+import heroImages from '../content/hero-images.json'
 import Footer from '../components/Footer'
 import LogoMark from '../components/LogoMark'
 import SiteNav from '../components/SiteNav'
 
 export default function Home() {
+  const [heroImage] = useState(
+    () => heroImages[Math.floor(Math.random() * heroImages.length)],
+  )
+
   return (
     <div>
       <header className="hero">
-        <div className="hero-photo" aria-hidden="true" />
+        <div
+          className="hero-photo"
+          aria-hidden="true"
+          style={{
+            backgroundImage: `url("${heroImage.src}")`,
+            backgroundPosition: heroImage.position,
+          }}
+        />
         <div className="hero-overlay" />
         <div className="hero-content">
           <LogoMark />

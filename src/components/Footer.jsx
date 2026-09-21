@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="site-footer">
       <LogoMark compact />
-      <p className="footer-title">Book &amp; Table</p>
+      <p className="footer-title">Book <span>&amp;</span> Table</p>
       <p>A space for stories, food, travel and friendship.</p>
       <div className="footer-links">
         <Link to="/about">About</Link>
