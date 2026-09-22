@@ -40,7 +40,7 @@ a { color: inherit; }
 
 .hero-overlay { position: absolute; inset: 0; background: rgba(13,36,73,.95); }
 .hero-content { position: relative; z-index: 1; text-align: center; padding: 4rem 1.5rem 3rem; }
-.logo-mark { display: block; width: min(429px, 83vw); height: auto; margin: 0 auto .75rem; filter: brightness(0) invert(98%) sepia(8%) saturate(900%) hue-rotate(318deg) brightness(107%); }
+.logo-mark { display: block; width: min(429px, 83vw); height: auto; margin: 0 auto .75rem; filter: brightness(0) invert(100%) sepia(8%) saturate(900%) hue-rotate(318deg) brightness(107%); }
 .logo-mark--compact { width: 132px; margin: 0 auto -12px; }
 
 .hero h1, .page-header h1, .footer-title {
