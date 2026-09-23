@@ -1,30 +1,12 @@
-import { useState } from 'react'
 import HomeContent from '../content/home.mdx'
-import heroImages from '../content/hero-images.json'
 import Footer from '../components/Footer'
 import LogoMark from '../components/LogoMark'
 import SiteNav from '../components/SiteNav'
 
 export default function Home() {
-  const [heroImage] = useState(
-    () => heroImages[Math.floor(Math.random() * heroImages.length)],
-  )
-  const heroImageUrl = heroImage.src.startsWith('http')
-    ? heroImage.src
-    : `${import.meta.env.BASE_URL}${heroImage.src.replace(/^\//, '')}`
-
   return (
     <div>
       <header className="hero">
-        <div
-          className="hero-photo"
-          aria-hidden="true"
-          style={{
-            backgroundImage: `url("${heroImageUrl}")`,
-            backgroundPosition: heroImage.position,
-          }}
-        />
-        <div className="hero-overlay" />
         <div className="hero-content">
           <LogoMark />
           <h1>Book <span>&amp;</span> Table</h1>
@@ -32,7 +14,7 @@ export default function Home() {
         </div>
       </header>
       <SiteNav />
-      <main>
+      <main className="home-main">
         <section className="welcome-section">
           <article className="prose home-prose"><HomeContent /></article>
           <div className="flourish" aria-hidden="true">✦</div>
